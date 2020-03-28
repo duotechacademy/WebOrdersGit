@@ -89,6 +89,22 @@ public class LoginTest extends TestBase {
 		
 	}
 	
+	@Test
+	public void loginPOMForGit() {
+		logger = reporter.createTest("Positive Login Test");
+		
+		LoginPage loginPage = new LoginPage();
+		logger.info("Logging in by entering the correct credentials");
+		loginPage.positiveLogin();
+		logger.info("Verifying the title contains \"Web Orders\"");
+		
+		Assert.assertTrue(driver.getTitle().contains("Web Orders"));
+		
+		logger.pass("Verified that the title contains \"Web Orders\"");
+		
+	}
+	
+	
 	
 	
 	
