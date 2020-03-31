@@ -53,7 +53,7 @@ public class LoginTest extends TestBase {
 		logger.info("Verifying that the error message is \"Invalid Login or Password.\"");
 		Assert.assertEquals(actual, expected);
 		
-		logger.pass("Verified that the error message is \"Invalid Login or Password.\"");
+		logger.pass("Verified that the error message is Invalid Login or Password.");
 	}
 	
 	@Test
