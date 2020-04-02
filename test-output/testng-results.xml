@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7714" started-at="2020-03-26T22:05:42 EDT" finished-at="2020-03-26T22:05:49 EDT">
+  <suite name="Default suite" duration-ms="34872" started-at="2020-04-02T18:20:34 EDT" finished-at="2020-04-02T18:21:09 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7714" started-at="2020-03-26T22:05:42 EDT" finished-at="2020-03-26T22:05:49 EDT">
+    <test name="Default test" duration-ms="34872" started-at="2020-04-02T18:20:34 EDT" finished-at="2020-04-02T18:21:09 EDT">
       <class name="io.duotech.tests.LoginTest">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce]" name="setUpSuite" is-config="true" duration-ms="140" started-at="2020-03-26T22:05:42 EDT" finished-at="2020-03-26T22:05:42 EDT">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUpSuite" is-config="true" duration-ms="180" started-at="2020-04-02T18:20:34 EDT" finished-at="2020-04-02T18:20:34 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce]" name="setUp" is-config="true" duration-ms="6177" started-at="2020-03-26T22:05:42 EDT" finished-at="2020-03-26T22:05:48 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="6747" started-at="2020-04-02T18:20:34 EDT" finished-at="2020-04-02T18:20:41 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginFailingTest()[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce]" name="loginFailingTest" duration-ms="432" started-at="2020-03-26T22:05:48 EDT" finished-at="2020-03-26T22:05:48 EDT">
+        <test-method status="FAIL" signature="loginFailingTest()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="loginFailingTest" duration-ms="357" started-at="2020-04-02T18:20:41 EDT" finished-at="2020-04-02T18:20:41 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Web Orders] but found [Web Orders Login]]]>
@@ -62,18 +62,132 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFailingTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce]" name="tearDown" is-config="true" duration-ms="1033" started-at="2020-03-26T22:05:48 EDT" finished-at="2020-03-26T22:05:49 EDT">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDown" is-config="true" duration-ms="1013" started-at="2020-04-02T18:20:41 EDT" finished-at="2020-04-02T18:20:42 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFailingTest status=FAILURE method=LoginTest.loginFailingTest()[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce] output={null}]]]>
+                <![CDATA[[TestResult name=loginFailingTest status=FAILURE method=LoginTest.loginFailingTest()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:io.duotech.tests.LoginTest@2473b9ce]" name="tearDownSuite" is-config="true" duration-ms="307" started-at="2020-03-26T22:05:49 EDT" finished-at="2020-03-26T22:05:50 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="5521" started-at="2020-04-02T18:20:42 EDT" finished-at="2020-04-02T18:20:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPOMForGit()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="loginPOMForGit" duration-ms="529" started-at="2020-04-02T18:20:48 EDT" finished-at="2020-04-02T18:20:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPOMForGit -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDown" is-config="true" duration-ms="651" started-at="2020-04-02T18:20:48 EDT" finished-at="2020-04-02T18:20:49 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPOMForGit status=SUCCESS method=LoginTest.loginPOMForGit()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="5495" started-at="2020-04-02T18:20:49 EDT" finished-at="2020-04-02T18:20:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPOMPattern()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="loginPOMPattern" duration-ms="549" started-at="2020-04-02T18:20:54 EDT" finished-at="2020-04-02T18:20:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPOMPattern -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDown" is-config="true" duration-ms="664" started-at="2020-04-02T18:20:55 EDT" finished-at="2020-04-02T18:20:56 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPOMPattern status=SUCCESS method=LoginTest.loginPOMPattern()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="5485" started-at="2020-04-02T18:20:56 EDT" finished-at="2020-04-02T18:21:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPOMPatternNegative()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="loginPOMPatternNegative" duration-ms="396" started-at="2020-04-02T18:21:01 EDT" finished-at="2020-04-02T18:21:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPOMPatternNegative -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDown" is-config="true" duration-ms="658" started-at="2020-04-02T18:21:01 EDT" finished-at="2020-04-02T18:21:02 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPOMPatternNegative status=SUCCESS method=LoginTest.loginPOMPatternNegative()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="5578" started-at="2020-04-02T18:21:02 EDT" finished-at="2020-04-02T18:21:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="loginSkip()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="loginSkip" duration-ms="552" started-at="2020-04-02T18:21:08 EDT" finished-at="2020-04-02T18:21:08 EDT">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this test because the rest of the test is not ready]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this test because the rest of the test is not ready
+at io.duotech.tests.LoginTest.loginSkip(LoginTest.java:88)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSkip -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDown" is-config="true" duration-ms="636" started-at="2020-04-02T18:21:08 EDT" finished-at="2020-04-02T18:21:09 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSkip status=SKIP method=LoginTest.loginSkip()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:io.duotech.tests.LoginTest@4b9e255]" name="tearDownSuite" is-config="true" duration-ms="362" started-at="2020-04-02T18:21:09 EDT" finished-at="2020-04-02T18:21:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->

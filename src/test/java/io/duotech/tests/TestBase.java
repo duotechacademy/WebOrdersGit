@@ -32,12 +32,12 @@ protected ExtentReports reporter;
 protected ExtentSparkReporter htmlreporter;
 protected ExtentTest logger;
 
-	@BeforeSuite
+	@BeforeSuite (alwaysRun = true)
 	public void setUpSuite() {
 		reporter = new ExtentReports();
 		String path = System.getProperty("user.dir") + "/test-output/extentReports/index.html";
 		htmlreporter = new ExtentSparkReporter(path);
-		htmlreporter.config().setDocumentTitle("Web Orders Automation Tests");
+		htmlreporter.config().setReportName("Web Orders Automation Tests");
 		//htmlreporter.config().setTheme(Theme.DARK);
 		
 		reporter.attachReporter(htmlreporter);
@@ -50,7 +50,7 @@ protected ExtentTest logger;
 	
 	
 
-	@BeforeMethod
+	@BeforeMethod (alwaysRun = true)
 	public void setUp () {
 		driver = Driver.getDriver();
 		actions = new Actions(driver);
@@ -60,7 +60,7 @@ protected ExtentTest logger;
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod (alwaysRun = true)
 	public void tearDown(ITestResult testResult) throws IOException {
 		
 		if(testResult.getStatus() == ITestResult.FAILURE) {
@@ -81,7 +81,7 @@ protected ExtentTest logger;
 	}
 	
 	
-	@AfterSuite
+	@AfterSuite (alwaysRun = true)
 	
 	public void tearDownSuite() {
 		reporter.flush();
